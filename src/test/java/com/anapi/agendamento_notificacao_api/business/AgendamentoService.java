@@ -3,7 +3,6 @@ package com.anapi.agendamento_notificacao_api.business;
 import com.anapi.agendamento_notificacao_api.business.mapper.IAgendamentoMapper;
 import com.anapi.agendamento_notificacao_api.controller.dto.in.AgendamentoRecord;
 import com.anapi.agendamento_notificacao_api.controller.dto.ou.AgendamentoRecordOut;
-import com.anapi.agendamento_notificacao_api.infrastructure.entities.Agendamento;
 import com.anapi.agendamento_notificacao_api.infrastructure.repositories.AgendamentoRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
