@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.time.LocalDateTime;
 
 @ExtendWith(MockitoExtension.class)
-public class AgendamentoServiceTest {
+class AgendamentoServiceTest {
 
     @InjectMocks
     private AgendamentoService service;
@@ -63,7 +63,7 @@ public class AgendamentoServiceTest {
     }
 
     @Test
-    void deveGravarAgendamentoComSucesso() throws Exception {
+    void deveGravarAgendamentoComSucesso() {
         when(mapper.paraEntity(agendamentoRecord)).thenReturn(agendamentoEntity);
         when(repository.save(agendamentoEntity)).thenReturn(agendamentoEntity);
         when(mapper.paraOut(agendamentoEntity)).thenReturn(agendamentoRecordOut);
